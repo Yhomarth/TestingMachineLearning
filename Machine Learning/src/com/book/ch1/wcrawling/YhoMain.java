@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.yhomarth.src;
+package com.book.ch1.wcrawling;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class YhoMain {
         System.out.println("where everyting start!!");
         
         try{
-            URL url = new URL("https://en.wikipedia.org/wiki/Data_science");
+            URL url = new URL("http://seri.siv.gob.do/consulta/Participantes_Tipos.php");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
             connection.connect();
